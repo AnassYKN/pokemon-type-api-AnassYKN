@@ -1,4 +1,4 @@
-package bo;
+package TP.bo;
 
 public class Stats {
     private Integer speed;

@@ -1,9 +1,9 @@
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import repository.PokemonTypeRepository;
-import repository.repositoryImpl.PokemonTypeRepositoryImpl;
-import service.PokemonTypeService;
-import service.serviceImpl.PokemonTypeServiceImpl;
+import TP.repository.PokemonTypeRepository;
+import TP.repository.repositoryImpl.PokemonTypeRepositoryImpl;
+import TP.service.PokemonTypeService;
+import TP.service.serviceImpl.PokemonTypeServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;

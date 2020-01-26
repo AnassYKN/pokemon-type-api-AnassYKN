@@ -1,6 +1,6 @@
-package repository;
+package TP.repository;
 
-import bo.PokemonType;
+import TP.bo.PokemonType;
 
 import java.util.List;
 

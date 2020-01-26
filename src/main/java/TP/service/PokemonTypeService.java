@@ -1,6 +1,6 @@
-package service;
+package TP.service;
 
-import bo.PokemonType;
+import TP.bo.PokemonType;
 
 import java.util.List;
 

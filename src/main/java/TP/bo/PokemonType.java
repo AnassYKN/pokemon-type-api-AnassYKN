@@ -1,4 +1,4 @@
-package bo;
+package TP.bo;
 
 import java.util.List;
 

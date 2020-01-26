@@ -1,10 +1,9 @@
-package service.serviceImpl;
+package TP.service.serviceImpl;
 
-import bo.PokemonType;
-import org.springframework.beans.factory.annotation.Autowired;
+import TP.bo.PokemonType;
+import TP.repository.PokemonTypeRepository;
 import org.springframework.stereotype.Service;
-import repository.PokemonTypeRepository;
-import service.PokemonTypeService;
+import TP.service.PokemonTypeService;
 
 import java.util.List;
 

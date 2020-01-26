@@ -1,4 +1,4 @@
-package bo;
+package TP.bo;
 
 public class Sprites {
     private String back_default;

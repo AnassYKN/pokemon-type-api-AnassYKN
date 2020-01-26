@@ -1,9 +1,9 @@
-package controller;
+package TP.controller;
 
-import bo.PokemonType;
+import TP.bo.PokemonType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.PokemonTypeService;
+import TP.service.PokemonTypeService;
 
 import java.util.List;
 

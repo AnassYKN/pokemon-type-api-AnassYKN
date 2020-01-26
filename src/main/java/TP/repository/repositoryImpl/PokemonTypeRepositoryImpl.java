@@ -1,9 +1,9 @@
-package repository.repositoryImpl;
+package TP.repository.repositoryImpl;
 
-import bo.PokemonType;
+import TP.bo.PokemonType;
+import TP.repository.PokemonTypeRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;
-import repository.PokemonTypeRepository;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,9 +1,8 @@
-import bo.PokemonType;
-import com.fasterxml.jackson.databind.AnnotationIntrospector;
+import TP.bo.PokemonType;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import repository.PokemonTypeRepository;
-import repository.repositoryImpl.PokemonTypeRepositoryImpl;
+import TP.repository.PokemonTypeRepository;
+import TP.repository.repositoryImpl.PokemonTypeRepositoryImpl;
 
 import java.util.List;
 
@@ -55,7 +54,7 @@ public class PokemonRepositoryImplTest {
     @Test
     void applicationContext_shouldLoadPokemonRepository(){
 
-        var context = new AnnotationConfigApplicationContext("repository");
+        var context = new AnnotationConfigApplicationContext("TP/repository");
         var repoByName = context.getBean("pokemonTypeRepositoryImpl");
         var repoByClass = context.getBean(PokemonTypeRepository.class);
 
