@@ -1,3 +1,5 @@
+package TP;
+
 import TP.bo.PokemonType;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

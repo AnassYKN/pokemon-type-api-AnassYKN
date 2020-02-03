@@ -27,4 +27,14 @@ public class PokemonTypeController {
     public List<PokemonType> getAllPokemonTypes() {
         return this.service.getAllPokemonTypes();
     }
+
+    @GetMapping(value = "/", params = "name")
+    public PokemonType getPokemonTypeFromName(@RequestParam("name") String name){
+        return this.service.getPokemonType(name);
+    }
+
+    @GetMapping(value = "/", params = "types")
+    public List<PokemonType> getPokemonTypeFromName(@RequestParam("types") List<String> types){
+        return this.service.getPokemonByTypes(types);
+    }
 }

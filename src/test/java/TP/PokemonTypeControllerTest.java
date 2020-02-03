@@ -1,3 +1,5 @@
+package TP;
+
 import TP.bo.PokemonType;
 import TP.controller.PokemonTypeController;
 import org.junit.jupiter.api.Test;
