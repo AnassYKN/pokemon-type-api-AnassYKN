@@ -28,13 +28,10 @@ public class PokemonTypeServiceImpl implements PokemonTypeService {
     }
 
     @Override
-    public PokemonType getPokemonType(String name) {
-        return null;
-    }
+    public PokemonType getPokemonType(String name) { return this.pokemonTypeRepository.findPokemonTypeByName(name); }
 
     @Override
-    public List<PokemonType> getPokemonByTypes(List<String> types) {
-        return null;
+    public List<PokemonType> getPokemonByTypes(List<String> types) { return this.pokemonTypeRepository.findPokemonByType(types);
     }
 
     public PokemonTypeRepository getPokemonTypeRepository() {
