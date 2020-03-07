@@ -1,10 +1,8 @@
-package TP.repository.repositoryImpl;
+package TP.repository;
 
-import TP.bo.PokemonType;
 import TP.bo.Translation;
 import TP.repository.TranslationRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 

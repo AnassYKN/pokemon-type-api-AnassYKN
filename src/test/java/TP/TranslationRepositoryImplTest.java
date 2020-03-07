@@ -1,9 +1,7 @@
 package TP;
 
 import TP.repository.TranslationRepository;
-import TP.repository.repositoryImpl.PokemonTypeRepositoryImpl;
-import TP.repository.repositoryImpl.TranslationRepositoryImpl;
-import TP.service.serviceImpl.PokemonTypeServiceImpl;
+import TP.repository.TranslationRepositoryImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -30,7 +28,7 @@ public class TranslationRepositoryImplTest {
     void applicationContext_shouldLoadPokemonRepository(){
 
         //TODO
-        var context = new AnnotationConfigApplicationContext(TranslationRepositoryImpl.class);
+        var context = new AnnotationConfigApplicationContext("TP.repository.repositoryImpl");
         var repoByName = context.getBean("TranslationRepositoryImpl");
         var repoByClass = context.getBean(TranslationRepository.class);
 
