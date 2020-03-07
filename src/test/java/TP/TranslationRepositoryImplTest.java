@@ -1,7 +1,7 @@
 package TP;
 
 import TP.repository.TranslationRepository;
-import TP.repository.TranslationRepositoryImpl;
+import TP.repository.repositoryImpl.TranslationRepositoryImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

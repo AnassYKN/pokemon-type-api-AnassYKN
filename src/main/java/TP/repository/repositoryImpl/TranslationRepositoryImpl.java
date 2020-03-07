@@ -1,4 +1,4 @@
-package TP.repository;
+package TP.repository.repositoryImpl;
 
 import TP.bo.Translation;
 import TP.repository.TranslationRepository;
@@ -42,6 +42,10 @@ public class TranslationRepositoryImpl implements TranslationRepository {
 
     @Override
     public String getPokemonName(int id, Locale locale) {
-       return this.translations.get(locale).get(id-1).getName();
+        return translations.get(locale) != null ? translations.get(locale).stream().filter(pttran ->
+                pttran.getId() == id).findFirst().get().getName()
+        : translations.get(Locale.ENGLISH).stream().filter(pttran ->
+                pttran.getId() == id).findFirst().get().getName();
+
     }
 }
