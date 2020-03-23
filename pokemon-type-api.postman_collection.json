@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "28135cda-517f-499b-a379-62833f50c736",
+		"name": "pokemon-type-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get pokemon type id = 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b747a11d-8233-4f54-9031-948e2363d077",
+						"exec": [
+							"pm.test(\"Bulbasaur\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].name).to.eq(\"Bulbasaur\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/1",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all pokemon types ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon type by name = pikachu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/?name=pikachu",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pikachu"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon type by types=electric",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/?types=electric ",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					],
+					"query": [
+						{
+							"key": "types",
+							"value": "electric "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon type by types=bug,poison",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/?types=bug,poison ",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					],
+					"query": [
+						{
+							"key": "types",
+							"value": "bug,poison "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get translate pokemon id = 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8b9e451-7ab2-4c4e-b843-903ba99a03a5",
+						"exec": [
+							"pm.test(\"Bulbasaur\", function () {\r",
+							"    var bulbasaur = pm.response.json();\r",
+							"    pm.expect(bulbasaur.id).to.eq(1);\r",
+							"    pm.expect(bulbasaur.name).to.eq(\"Bulbasaur\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/1",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get translate fr id = 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4bd62b66-5cef-4e3d-9f8a-db5b7d2b7c98",
+						"exec": [
+							"pm.test(\"Bulbasaur\", function () {\r",
+							"    var bulbasaur = pm.response.json();\r",
+							"    pm.expect(bulbasaur.id).to.eq(1);\r",
+							"    pm.expect(bulbasaur.name).to.eq(\"Bulbizarre\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "fr",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/1",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get translate all pokemon types",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "023521a5-2210-431f-b04f-aafcd95582e5",
+						"exec": [
+							"pm.test(\"all pokemon types\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.length).to.eq(151);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parasect\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].name).to.eq(\"Parasect\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Gastly\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[1].name).to.eq(\"Gastly\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get translate fr all pokemon types",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6757de03-16bd-4802-b509-371b6b04cb3f",
+						"exec": [
+							"pm.test(\"all pokemon types\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.length).to.eq(151);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"parasect\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].name).to.eq(\"Parasect\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"gastly\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[1].name).to.eq(\"Fantominus\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"warning": "Key contains invalid whitespace characters.",
+						"key": "Accept-Language",
+						"value": "fr",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pokemon-type-api-anassykn.herokuapp.com/pokemon-types/",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
