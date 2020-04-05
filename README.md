@@ -22,4 +22,8 @@ l'application est déployé sur l'adresse suivante : https://pokemon-type-api-an
 
 liste des routes est disponible sur le l'adresse suivante : https://pokemon-type-api-anassykn.herokuapp.com/swagger-ui.html#/
 
+# PostMan
+
+pokemon-type-api.postman_collection.json pour testé les routes de l'api 
+
 pokemon-type-api-AnassYKN created by GitHub Classroom
